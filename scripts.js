@@ -20,21 +20,21 @@ gsap.from("#home", {
 })
 
 
-gsap.fromTo(".card", 
-  { 
-      opacity:0,
-      y:100 
-  }, 
-  { 
-      opacity:1,
-      y: 0, 
-      duration: 0.5, 
-      delay:0.2,
-      stagger: 0.3, 
-      scrollTrigger:".card",
-      scrub:2
-  }
-);
+// gsap.fromTo(".card", 
+//   { 
+//       opacity:0,
+//       y:100 
+//   }, 
+//   { 
+//       opacity:1,
+//       y: 0, 
+//       duration: 0.5, 
+//       delay:0.2,
+//       stagger: 0.3, 
+//       scrollTrigger:".card",
+//       scrub:2
+//   }
+// );
 
 
 gsap.fromTo(".projectImage img", 
