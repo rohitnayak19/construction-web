@@ -1,0 +1,44 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Interior",
+      "image": "./asset/img/bs.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Interior",
+      "image": "./asset/img/gh.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Exterior",
+      "image": "./asset/img/p1-min.png"
+    },
+    {
+      "id": 4,
+      "name": "Exterior",
+      "image": "./asset/img/p2-min.png"
+    },
+    {
+      "id": 5,
+      "name": "Acrchitectural",
+      "image": "./asset/img/gr1.png"
+    },
+    {
+      "id": 6,
+      "name": "Acrchitectural",
+      "image": "./asset/img/hero-min.png"
+    },
+    {
+      "id": 7,
+      "name": "Exterior",
+      "image": "./asset/img/p3-min.png"
+    },
+    {
+      "id": 8,
+      "name": "Interior",
+      "image": "./asset/img/an.jpg"
+    }
+  ]
+}
