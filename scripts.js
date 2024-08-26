@@ -20,21 +20,20 @@ gsap.from("#home", {
 })
 
 
-// gsap.fromTo(".card", 
-//   { 
-//       opacity:0,
-//       y:100 
-//   }, 
-//   { 
-//       opacity:1,
-//       y: 0, 
-//       duration: 0.5, 
-//       delay:0.2,
-//       stagger: 0.3, 
-//       scrollTrigger:".card",
-//       scrub:2
-//   }
-// );
+gsap.fromTo(".card", 
+  { 
+      opacity:0,
+      y:100 
+  }, 
+  { 
+      opacity:1,
+      y: 0, 
+      duration: 0.5, 
+      stagger: 0.3, 
+      scrollTrigger:".card",
+      scrub:2
+  }
+);
 
 
 gsap.fromTo(".projectImage img", 
@@ -45,9 +44,8 @@ gsap.fromTo(".projectImage img",
   { 
       opacity:1,
       y: 0, 
-      duration: 0.5, 
-      delay:0.2,
-      stagger: 0.3, 
+      duration: 0.3, 
+      stagger: 0.2, 
       scrollTrigger:".projectImage img",
       scrub:2
   }
@@ -62,9 +60,7 @@ gsap.fromTo(".contact-container",
   { 
       opacity:1,
       y: 0, 
-      duration: 1, 
-      delay:0.2,
-      stagger: 0.3, 
+      duration: 0.6, 
       scrollTrigger:".contact-container",
       scrub:2
   }
@@ -90,8 +86,8 @@ gsap.fromTo(".about",
 
 
 const tl = gsap.timeline();
-tl.to('ul.nav-links',{
-  right:0,
+tl.to('.nav-links',{
+  x:0,
   duration:0.4,
 })
 

@@ -13,7 +13,7 @@ html{
 
 body {
   font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 section{
@@ -37,6 +37,7 @@ section{
 .container {
   margin: 0 auto;
   width: 80%;
+  overflow: hidden;
 }
 
 h1 {
@@ -84,7 +85,6 @@ ul {
   color: #236490;
   display: none;
 }
-
 
 header{
   padding: 12px;
@@ -304,7 +304,6 @@ button {
 
 .aboutContext p{
   font-family: candara;
-
   margin-top: 30px;
   font-size: 22px;
   color: #212121ce;
@@ -773,21 +772,24 @@ footer {
     display: block;
  }
 
-header{
-  position: relative;
-}
-ul.nav-links{
+/* header nav{
+  position:relative;
+} */
+
+.nav-links{
   padding-top: 80px;
   position: absolute;
-  height: 100vh;
+  height: 80vh;
   align-items: flex-start;
   padding-left: 80px;
   top: 72px;
-  right: -400px;
+  right: 0;
+  transform: translateX(100%);
   background-color: #ffffff5e;
   backdrop-filter: blur(30px);
-  width: 60%;
+  width: 65%;
   flex-direction: column;
+  transition: transform all ease-in 0.3s;
 }
 
 .nav-links li a{
@@ -796,6 +798,26 @@ ul.nav-links{
 }
 
 @media (max-width:428px) {
+
+.nav-links{
+  padding-top: 80px;
+  position: absolute;
+  height: 100vh;
+  align-items: flex-start;
+  padding-left: 80px;
+  top: 72px;
+  right: 0;
+  transform: translateX(100%);
+  background-color: #ffffff5e;
+  backdrop-filter: blur(30px);
+  width: 65%;
+  flex-direction: column;
+  transition: transform all ease-in 0.3s;
+}
+
+.nav-links li a{
+  font-size: 30px;
+}
   .container{
     margin: 0 auto;
     width: 98%;
