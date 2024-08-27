@@ -1053,10 +1053,9 @@ footer {
 }
 
 .custom-logo h1 {
-  color: #3498db;
-  font-weight: 500;
-  font-size: 30px;
+  font-size: 24px;
   margin: 0;
+  color: #3498db;
 }
 
 .custom-nav-links {
@@ -1073,8 +1072,7 @@ footer {
 
 .custom-nav-links a {
   text-decoration: none;
-  font-weight: 500;
-  font-size: 20px;
+  font-size:18px;
   color: #3498db;
   transition: all ease 0.2s;
 }
@@ -1083,7 +1081,6 @@ footer {
   transform: scale(1.2);
 }
 
-
 .custom-menu-btn {
   cursor: pointer;
   display: flex;
@@ -1091,25 +1088,22 @@ footer {
 }
 
 .custom-menu-btn i {
-  font-size: 24px;
+  font-size: 30px;
+  color: #2792da;
 }
 
 #custom-open {
-  color:#3498db;
-  font-size: 30px;
-  display: none; /* Hide the close icon initially */
+  font-size: 25px; /* Hide the close icon initially */
 }
 
 #custom-close {
-  color:#3498db;
-  font-size: 30px;
   display: none; /* Hide the close icon initially */
 }
 
 /* Side Menu */
 .custom-side-menu {
   position: fixed;
-  top: 80px;
+  top: 81px;
   left: 0;
   width: 250px;
   height: 100vh;
@@ -1133,9 +1127,8 @@ footer {
 
 .custom-side-menu a {
   text-decoration: none;
-  font-size: 20px;
   color: #3498db;
-  font-weight: 500;
+  font-size: 18px;
   display: block;
 }
 

@@ -92,8 +92,6 @@ tl.to('.nav-links',{
 })
 
 tl.pause();
-const open = document.getElementById('open');
-const close = document.getElementById('close');
 
 // open.addEventListener('click', () => {
 //   tl.play();
