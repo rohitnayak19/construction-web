@@ -95,17 +95,17 @@ tl.pause();
 const open = document.getElementById('open');
 const close = document.getElementById('close');
 
-open.addEventListener('click', () => {
-  tl.play();
-  open.style.display = "none";
-  close.style.display = "block";
-});
+// open.addEventListener('click', () => {
+//   tl.play();
+//   open.style.display = "none";
+//   close.style.display = "block";
+// });
 
-close.addEventListener('click', () => {
-  tl.reverse();
-  open.style.display = "block";
-  close.style.display = "none";
-});
+// close.addEventListener('click', () => {
+//   tl.reverse();
+//   open.style.display = "block";
+//   close.style.display = "none";
+// });
 
 
 
@@ -146,3 +146,16 @@ buttons.forEach((button) =>{
     }).catch(error => console.error('Error fetching JSON:', error));
   })
 })
+
+document.getElementById("custom-open").addEventListener("click", function () {
+  document.getElementById("customSideMenu").classList.add("open");
+  document.getElementById("custom-open").style.display = "none";
+  document.getElementById("custom-close").style.display = "block";
+});
+
+document.getElementById("custom-close").addEventListener("click", function () {
+  document.getElementById("customSideMenu").classList.remove("open");
+  document.getElementById("custom-open").style.display = "block";
+  document.getElementById("custom-close").style.display = "none";
+});
+
