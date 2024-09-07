@@ -13,7 +13,6 @@ html{
 
 body {
   font-family: "Poppins", sans-serif;
-  overflow-x: hidden !important;
 }
 
 section{
@@ -771,15 +770,15 @@ footer {
 #open{
     display: block;
  }
-
-/* header nav{
+/* 
+ header nav{
   position:relative;
 } */
 
 .nav-links{
   padding-top: 80px;
   position: absolute;
-  height: 80vh;
+  height: 100vh;
   align-items: flex-start;
   padding-left: 80px;
   top: 72px;
@@ -797,10 +796,10 @@ footer {
 }
 }
 
-@media (max-width:428px) {
 
+@media (max-width:428px){
 .nav-links{
-  padding-top: 80px;
+  padding-top: 70px;
   position: absolute;
   height: 100vh;
   align-items: flex-start;
