@@ -1,42 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Construction Company</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/f54945268a.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
+
 <body>
-   <!-- header section start here -->
-   <header class="shadow">
-    <div class="flex container">
-        <a href="#" class="logo"><h1>Logo</h1></a>
-        <nav>
-            <ul class="flex nav-links">
-                <li class="primary"><a href="#home">Home</a></li>
-                <li class=""><a href="#services">Services</a></li>
-                <li class="primary"><a href="#about">About</a></li>
-                <li class=""><a href="#projects">Projects</a></li>
-                <li class=""><a href="#contact">Contact</a></li>
-                <!-- <li><button><span>Register</span></button></li> -->
-            </ul>
-            <div class="menuBtn">
-                <i class="ri-menu-3-line" id="open"></i>
-                <i class="ri-close-line" id="close"></i>
-            </div>
-        </nav>
-    </div>
+    <!-- header section start here -->
+    <header class="custom-header">
+        <div class="custom-container">
+            <a href="#" class="custom-logo">
+                <h1>Logo</h1>
+            </a>
+            <nav>
+                <ul class="custom-nav-links">
+                    <li class="custom-primary"><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li class="custom-primary"><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="custom-menu-btn">
+                    <i class="ri-menu-3-line" id="custom-open"></i>
+                    <i class="ri-close-line" id="custom-close"></i>
+                </div>
+            </nav>
+        </div>
     </header>
-     <!-- header section end here -->
+    <div class="custom-side-menu" id="customSideMenu">
+        <ul>
+            <li class="custom-primary"><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li class="custom-primary"><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>    
+
+    <!-- header section end here -->
     <main>
         <!-- home section start here -->
         <section class="home" id="home">
-            <div class="flex container">    
+            <div class="flex container">
                 <div class="heroContext">
                     <h2>Your house is<br> waiting for you</h2>
-                    <p>We build your dreams. Lorem, ipsum dolor sit amet consectetur adipisicing elit.Blanditiis aliquid.</p>
+                    <p>We build your dreams. Lorem, ipsum dolor sit amet consectetur adipisicing elit.Blanditiis
+                        aliquid.</p>
                     <button><span><a href="#contact">Contact</a></span></button>
                 </div>
                 <div class="heroImage">
@@ -44,9 +58,9 @@
                 </div>
             </div>
         </section>
-         <!-- home section end here -->
-          
-          <!-- services section start here -->
+        <!-- home section end here -->
+
+        <!-- services section start here -->
         <section class="services" id="services">
             <h2>Our Services</h2>
             <div class="servicesCard flex container">
@@ -63,19 +77,19 @@
                     <div class="cardImage">
                         <img src="./asset/img/gh.jpg" alt="" height="">
                     </div>
-                   <div class="cardText">
-                    <h3>Interior Design</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                   </div>
+                    <div class="cardText">
+                        <h3>Interior Design</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
                 </div>
                 <div class="card">
                     <div class="cardImage">
                         <img src="./asset/img/an.jpg" alt="" height="">
                     </div>
-                   <div class="cardText">
-                    <h3>Exterior Design</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                   </div>
+                    <div class="cardText">
+                        <h3>Exterior Design</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
                 </div>
                 <div class="card">
                     <div class="cardImage">
@@ -90,13 +104,17 @@
         </section>
         <!-- services section end here -->
 
-          <!-- About section start here -->
-          <section class="about" id="about">
+        <!-- About section start here -->
+        <section class="about" id="about">
             <h2>About us</h2>
             <div class="container flex">
                 <div class="aboutContext">
                     <h3>About our company</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deleniti velit neque id at quaerat, iste error. A possimus ab deserunt optio soluta, cumque quibusdam eos, necessitatibus officiis perferendis nihil accusantium exercitationem accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quos architecto excepturi voluptas autem necessitatibus ex sit error mollitia illo.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deleniti velit neque id at
+                        quaerat, iste error. A possimus ab deserunt optio soluta, cumque quibusdam eos, necessitatibus
+                        officiis perferendis nihil accusantium exercitationem accusamus. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Velit quos architecto excepturi voluptas autem necessitatibus ex
+                        sit error mollitia illo.</p>
                 </div>
 
                 <div class="aboutImage">
@@ -104,8 +122,8 @@
                 </div>
             </div>
             </div>
-         </section>
-         <!-- About section end here -->
+        </section>
+        <!-- About section end here -->
 
         <!-- project section start here -->
         <section id="projects" class="projects">
@@ -201,10 +219,15 @@
             <p class="footer-copy">&copy; 2023 Construction Company. All rights reserved.</p>
         </div>
     </footer>
-    
+
     <!-- footer section start here -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="scripts.js"></script>
 </body>
+
 </html>

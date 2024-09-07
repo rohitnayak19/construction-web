@@ -13,6 +13,7 @@ html{
 
 body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 section{
@@ -64,27 +65,6 @@ ul {
   list-style-type: none;
 }
 
-.menuBtn{
-  font-size: 25px;
-  cursor: pointer;
-}
-
-.menuBtn{
-  display: none;
-}
-
-#open {
-  font-weight:bold;
-  color: #236490;
-  display: none;
-}
-
-#close {
-  font-size: 35px;
-  color: #236490;
-  display: none;
-}
-
 header{
   padding: 12px;
   position: sticky;
@@ -104,13 +84,6 @@ ul.nav-links{
 }
 
 /* Styling header section start here */
-
-.logo h1{
-  color: #3498db;
-  font-weight: 400;
-  font-size: 2rem;
-  cursor: pointer;
-}
 
 .shadow{
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -1066,4 +1039,111 @@ footer {
    padding: 0px 30px
   }
 }
+
+
+/* Header Css */
+
+.custom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.custom-logo h1 {
+  font-size: 24px;
+  margin: 0;
+  color: #3498db;
+}
+
+.custom-nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: none; /* Hide navigation on smaller screens */
+}
+
+.custom-nav-links li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.custom-nav-links a {
+  text-decoration: none;
+  font-size:18px;
+  color: #3498db;
+  transition: all ease 0.2s;
+}
+
+.custom-nav-links a:hover{
+  transform: scale(1.2);
+}
+
+.custom-menu-btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.custom-menu-btn i {
+  font-size: 30px;
+  color: #2792da;
+}
+
+#custom-open {
+  font-size: 25px; /* Hide the close icon initially */
+}
+
+#custom-close {
+  display: none; /* Hide the close icon initially */
+}
+
+/* Side Menu */
+.custom-side-menu {
+  position: fixed;
+  top: 81px;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: white;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  padding-top: 60px;
+  z-index: 1000;
+}
+
+.custom-side-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.custom-side-menu li {
+  padding: 15px 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.custom-side-menu a {
+  text-decoration: none;
+  color: #3498db;
+  font-size: 18px;
+  display: block;
+}
+
+.custom-side-menu.open {
+  transform: translateX(0);
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .custom-nav-links {
+      display: flex; /* Show navigation on larger screens */
+  }
+  .custom-menu-btn {
+      display: none; /* Hide the menu button on larger screens */
+  }
+}
+
 
